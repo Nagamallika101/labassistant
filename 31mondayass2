@@ -1,0 +1,32 @@
+******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+************************************************************************
+#include<stdio.h>
+void recorder(int A[],int n)
+    int k=0;
+    for(int i=0;i<n;i++)
+    {
+        if(A[i]!=0)
+        {
+            A[k++]=A[i];
+        }
+    }
+    for( i=k;i<n;i++)
+    {
+        A[i]=0;
+    }
+int main(void)
+{
+    print A[]={6,0,8,2,3,0,4,0,1};
+    int n=sizeof (A)/sizeof(A[0]);
+    recorder(A,n);
+    for(int i=0;i<n;i++)
+    {
+        printf("%d",A[i]);
+    }
+    return 0;
+}
