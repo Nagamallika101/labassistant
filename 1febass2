@@ -1,0 +1,27 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include<stdio.h>
+void try_to _change(int,int)
+int main()
+{
+     int x=10,y=20;
+     printf("initial value of x=%d\n",x);
+     printf("initial value of y=%d\n",y);
+     printf("\ncalling the function\n");
+     printf("\nValues after function call\n\n");
+     printf("final value of x=%d\n",x);
+     printf("final value of y=%d\n",y);
+     return 0;
+}
+void try_to_change(intx,inty)
+{
+    x=x+10;
+    y=y+10;
+    print("\nValue of x(inside function)=%d\n",*x);
+    printf("Value of y(inside function)=%d\n",*y);
+}
