@@ -1,0 +1,29 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+int fact(int);
+int main()
+{
+    int x,n;
+    printf("enter the number to find factorial:");
+    scanf("%d",&n);
+    x=fact(n);
+    printf("factorial of %d is %d",n,x);
+    return 0;
+}
+int fact(int n)
+{ 
+    if(n==0)
+    return(1);
+    return(n*fact(n-1));
+}
+
+
+    
+
