@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include<stdio.h>
+int main()
+{
+    int i,j,a,number[5];
+    printf("enter the value of numbers:\n");
+    for(i=0;i<5;i++)
+    scanf("%d",&number[i]);
+    for(i=0;i<5;i++)
+    {
+        for(j=i+1;j<5;j++)
+        {
+            if(number[i]>number[j])
+            {
+                a=number[j];
+                number[j]=number[i];
+                number[i]=a;
+            }
+        }
+    }
+    printf("the entered numbers in order:\n");
+    for(i=0;i<5;i++)
+    printf("%d /t",number[i]);
+    return 0;
+}
