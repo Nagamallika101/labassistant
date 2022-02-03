@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,len=0;
+    char str[]="PoWeR";
+    len=sizeof(str)/sizeof(str[0]);
+    for(i=0;i<len;i++)
+    {
+        if(upper(str[i]))
+        {
+            str[i]=tolower(str[i]);
+        }
+        else if(lower(str[i]))
+        {
+            str[i]=toupper(str[i])
+        }
+    }
+    printf("string after case conversion:%s",str);
+    return 0;
+}
