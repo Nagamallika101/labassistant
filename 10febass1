@@ -1,0 +1,24 @@
+
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+    file *f;
+    char ch[10];
+    int n,i;
+    char c;
+    f=fopen("data file","w");
+    printf("enter data");
+    gets(data);
+    n=strlen(data);
+    for(i=0;i<n;i++)
+    {
+        c=ch[i];
+        fputc(c,f);
+    }
+    printf("file is created");
+    fclose(f);
+    return 0;
+}
