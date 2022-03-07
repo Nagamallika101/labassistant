@@ -1,0 +1,4 @@
+ table student(sno number(3),sname char(20),
+ screategroup char(6),maths number(6),
+ physics number(6),computers(6));
+ alter table student add(total number(3),avg number(4));
